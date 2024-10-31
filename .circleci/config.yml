@@ -58,7 +58,7 @@ jobs:
             docker build --tag cocktail-api:${CIRCLE_SHA1:0:7} ./cocktail-api/
       # - discord/status:
       #     fail_only: true
-      #     failure_message: ":red_circle: Algo deu errado no workflow de #${CIRCLE_SHA1:0:7}!"
+      #     failure_message: ":red_circle: Algo deu errado no workflow de #${CIRCLE_SHA1:0:7}!".
 
   build-frontend:
     docker:

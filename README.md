@@ -8,4 +8,4 @@ First install `docker` with an updated package that comes with the `compose` com
 
 ## Execution
 
-To start the application, simply run `docker compose up`. The frontend service will be served at http://localhost:8080
+To start the application, simply run `docker compose up`. The frontend service will be served at http://localhost:8080.A
