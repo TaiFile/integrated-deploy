@@ -1,5 +1,6 @@
 version: 2.1
 
+# Jobs: definem a ordem de comandos que serão executados passo a passo
 jobs:
   greetings:
     docker:
@@ -7,18 +8,10 @@ jobs:
     steps:
       - checkout
       - run:
-        command: echo "Bem vindo ao CircleCI"
+          command: echo "Bem vindo ao CircleCI!"
 
+# Workflows: orquestram a ordem dos jobs
 workflows:
   hello-world:
     jobs:
       - greetings
-
-services:
-  backend:
-    build: ./cock
-    ports: "8000:800"
-
-  frontend:
-    build: ./cock
-    ports: "8080:8080"
