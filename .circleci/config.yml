@@ -30,7 +30,7 @@ jobs:
       - run:
           command: echo "Build do projeto iniciada às $(date +%r)"
       - discord/status:
-          success_message: "Workflow de #${CIRCLE_SHA1:0:7} iniciado..."
+          success_message: "Goioere é mato!!!!!!!!!!"
 
   test-and-build-backend:
     docker:
